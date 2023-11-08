@@ -1,13 +1,16 @@
+import React from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { PriceHighligh, TransactionContainer, TransactionTable } from "./styles";
+import { SearchForm } from "./components/SearchForm";
 
 export function Transactions() {
   return (
     <>
       <Header />
-      <Summary />
+      <Summary />      
       <TransactionContainer>
+        <SearchForm/>
         <TransactionTable>
           <tbody>
             <tr>
